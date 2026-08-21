@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Asif</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="assets/dist/style.css">
+</head>
+
+<body>
+
+
+
+
+    <!-- ==========================================================
+     NAVBAR
+========================================================== -->
+    <header class="fixed z-50 w-full px-2 pt-2 sm:px-4 sm:pt-4">
+        <nav
+            class="mx-auto flex w-full max-w-[1900px] items-center justify-between gap-4 rounded-2xl bg-white py-2  lg:pl-7 lg:pr-2.25 sm:pl-4 sm:pr-2 pl-4 pr-2 lg:py-4">
+
+            <!-- Logo -->
+            <a href="#home" class="shrink-0 ">
+                <img src="assets/images/MdAsif.svg" class="img-fluid" alt="">
+            </a>
+
+            <!-- Desktop menu -->
+            <ul class="hidden items-center gap-1 lg:flex xl:gap-4">
+                <li><a href="index.html" class="nav-link ">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="works.html" class="nav-link is-active">My Works</a></li>
+            </ul>
+
+            <div class="flex items-center gap-2">
+                <!-- Reusable animated button -->
+                <a href="#" data-btn class="btn btn-primary hidden sm:inline-flex">
+                    <span class="relative z-10">Hire me on Upwork</span>
+                    <span data-btn-icon class="btn-icon relative z-10">
+                        <span data-btn-arrow class="btn-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0032 9.41421L7.39663 18.0208L5.98242 16.6066L14.589 8H7.00324V6H18.0032V17H16.0032V9.41421Z"
+                                    fill="white" /></svg>
+                        </span>
+                        <span data-btn-arrow class="btn-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0032 9.41421L7.39663 18.0208L5.98242 16.6066L14.589 8H7.00324V6H18.0032V17H16.0032V9.41421Z"
+                                    fill="white" /></svg>
+                        </span>
+                    </span>
+                </a>
+
+                <!-- Mobile toggle -->
+                <button type="button" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="mobileMenu"
+                    class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-navy/5 text-navy transition hover:bg-navy/10 lg:hidden">
+                    <span class="relative block h-4 w-5">
+                        <span
+                            class="bar absolute left-0 top-0 block h-[2px] w-full rounded bg-navy transition-transform duration-300"></span>
+                        <span
+                            class="bar absolute left-0 top-[7px] block h-[2px] w-full rounded bg-navy transition-opacity duration-300"></span>
+                        <span
+                            class="bar absolute left-0 top-[14px] block h-[2px] w-full rounded bg-navy transition-transform duration-300"></span>
+                    </span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile menu panel -->
+        <div id="mobileMenu"
+            class="mx-auto mt-2 hidden w-full max-w-[1880px] overflow-hidden rounded-2xl bg-white p-3 lg:hidden!">
+            <ul class="flex flex-col gap-1">
+                <li><a href="index.html" class="nav-link w-full justify-start!">Home</a></li>
+                <li><a href="services.html" class="nav-link w-full justify-start!">Services</a></li>
+                <li><a href="about.html" class="nav-link w-full justify-start!">About</a></li>
+                <li><a href="works.html" class="nav-link is-active  w-full justify-start!">My Works</a></li>
+            </ul>
+            <a href="#" data-btn class="btn btn-primary mt-3 w-full sm:hidden">
+                <span class="relative z-10">Hire me on Upwork</span>
+                <span data-btn-icon class="btn-icon relative z-10">
+                    <span data-btn-arrow class="btn-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.0032 9.41421L7.39663 18.0208L5.98242 16.6066L14.589 8H7.00324V6H18.0032V17H16.0032V9.41421Z"
+                                fill="white" /></svg>
+                    </span>
+                    <span data-btn-arrow class="btn-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.0032 9.41421L7.39663 18.0208L5.98242 16.6066L14.589 8H7.00324V6H18.0032V17H16.0032V9.41421Z"
+                                fill="white" /></svg>
+                    </span>
+                </span>
+            </a>
+        </div>
+    </header>
+
+
+    <!-- ==========================================================
+     BANNER
+========================================================== -->
+    <section id="home" class="banner relative isolate overflow-hidden">
+
+        <!-- required gradient overlay -->
+        <!-- <div class="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(9,4,36,0)_51.77%,#180E4B_95.02%)]"></div> -->
+
+        <div
+            class="mx-auto flex flex-col items-center justify-center text-center w-full max-w-[1500px] px-5 pb-14 pt-12 sm:px-8 lg:pb-0 lg:pt-16 xl:px-16">
+
+            <!-- Content (Full Width & Center Aligned) -->
+            <div class="lg:pt-50 lg:pb-20 pt-20 pb-0   flex flex-col items-center">
+                <h1 data-anim class="banner-title">
+                    Real results from <strong>real e-commerce stores</strong>
+                </h1>
+
+                <p data-anim class="banner-desc mt-6">
+                    A selection of case studies from my 140+ completed engagements — covering e-commerce SEO, AI SEO
+                    (AEO, GEO, LLM), and results across both Google Search and AI platforms. Every project shows the
+                    challenge, the strategy, and the actual numbers
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+     FEATURED PROJECT
+========================================================== -->
+    <section class="bg-white section-padding">
+        <div class="container">
+
+            <!-- Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2.5 sm:gap-3 mb-12">
+                <!-- Active Pill -->
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#FF6B35] backdrop-blur-xs border border-white/10 text-white text-sm md:text-lg lg:text-xl xl:text-2xl font-bold leading-[128%] transition-all">
+                    All industries
+                </button>
+
+                <!-- Inactive Pills -->
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Pest Control
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    HVAC Services
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Dental
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Restoration
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Jewellery
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Education
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Tech & IT
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Real Estate
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Fashion & Beauty
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Legal / Law
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Waste Management & Remediation
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Roofing
+                </button>
+                <button
+                    class="px-3 py-2 sm:px-4 sm:py-2 md:px-6 md:py-3 xl:px-8 xl:py-5 rounded-full bg-[#F4F4F6] backdrop-blur-xs border border-white/10 text-[#291C69] hover:text-white hover:bg-[#FF6B35] text-sm md:text-lg lg:text-xl xl:text-2xl font-normal leading-[128%] transition-all duration-300">
+                    Solar Installation
+                </button>
+            </div>
+
+            <!-- Section heading -->
+            <div class="flex max-w-230 flex-col  gap-4 mb-12">
+                <h2 class="text-banner text-[32px] font-extralight leading-[120%] sm:text-[42px] lg:text-[54px]">
+                    <strong class="font-semibold">Featured</strong> project
+                </h2>
+            </div>
+
+            <!-- Featured Project Card -->
+            <div
+                class="bg-[#F8F9FA] rounded-2xl sm:rounded-3xl md:rounded-4xl p-2 grid grid-cols-1 lg:grid-cols-12 items-stretch overflow-hidden">
+
+                <!-- Left Column: Image (Stretched to match full height) -->
+                <div class="lg:col-span-5 relative h-64 lg:h-full rounded-2xl overflow-hidden">
+                    <img src="assets/images/featured-project.png" alt="GlowUp Cosmetics Dashboard"
+                        class="w-full h-full object-cover rounded-2xl">
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="lg:col-span-7 flex flex-col items-start text-left p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
+
+
+                    <!-- Badge -->
+                    <div class="flex items-center gap-1.5 sm:gap-2.5 mb-3 px-2 sm:px-3 py-1 rounded-r-md" style="
+                border-left: 1px solid #FF6F42;
+                background: linear-gradient(90deg, rgba(255, 111, 66, 0.10) 0%, rgba(255, 255, 255, 0.00) 100%);
+              ">
+                        <span class="text-[#FF6F42] text-xs sm:text-sm md:text-base leading-[130%]">Shopify</span>
+                        <span class="w-1 h-1 rounded-full bg-[#FF6F42]/60"></span>
+                        <span class="text-[#FF6F42] text-xs sm:text-sm md:text-base leading-[130%]">Beauty &
+                            Cosmetics</span>
+                        <span class="w-1 h-1 rounded-full bg-[#FF6F42]/60"></span>
+                        <span class="text-[#FF6F42] text-xs sm:text-sm md:text-base leading-[130%]">USA</span>
+                        <span class="w-1 h-1 rounded-full bg-[#FF6F42]/60"></span>
+                        <span class="text-[#FF6F42] text-xs sm:text-sm md:text-base leading-[130%]">6 months</span>
+                    </div>
+
+                    <!-- Project Title -->
+                    <h3
+                        class="text-[#180E4B] md:text-2xl sm:text-xl text-lg lg:text-[36px] font-normal leading-[120%] mb-2 md:mb-4">
+                        GlowUp Cosmetics: organic revenue 2.4x in 6 months — category SEO + schema overhaul
+                    </h3>
+
+                    <!-- Description -->
+                    <p class="text-[#8B86A5] text-sm sm:text-base md:text-lg lg:text-xl leading-[130%] mb-3 md:mb-6">
+                        A Shopify beauty brand plateaued at $40k/month organic revenue. Through technical fixes, schema
+                        deployment, collection page rewrites, and an AEO content layer that got products cited in Google
+                        AI Overviews, organic revenue grew to $96k/month — while paid ad spend dropped by 38%.
+                    </p>
+
+                    <!-- Metric Badges -->
+                    <div class="flex flex-wrap gap-1.5 sm:gap-2">
+                        <span
+                            class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#291C69]/7 border border-[#291C69]/10 text-[#291C69] text-xs sm:text-sm font-medium leading-normal">2.4x
+                            organic revenue</span>
+                        <span
+                            class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#291C69]/7 border border-[#291C69]/10 text-[#291C69] text-xs sm:text-sm font-medium leading-normal">+285%
+                            organic traffic</span>
+                        <span
+                            class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#291C69]/7 border border-[#291C69]/10 text-[#291C69] text-xs sm:text-sm font-medium leading-normal">340
+                            KWs in top 10</span>
+                        <span
+                            class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#291C69]/7 border border-[#291C69]/10 text-[#291C69] text-xs sm:text-sm font-medium leading-normal">Star
+                            snippets won</span>
+                        <span
+                            class="px-3 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#291C69]/7 border border-[#291C69]/10 text-[#291C69] text-xs sm:text-sm font-medium leading-normal">Paid
+                            ad spend −38%</span>
+                    </div>
+
+                    <!-- Action Button -->
+                    <div class="flex justify-center mt-6 md:mt-12">
+                        <a href="#" data-btn class="btn btn-primary shrink-0">
+                            <span data-btn-shine class="btn-shine"></span>
+                            <span class="relative z-10">View case study </span>
+                            <span data-btn-icon class="btn-icon relative z-10">
+                                <span data-btn-arrow class="btn-arrow">
+                                    <svg width="20" height="20" class="sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.0032 9.41421L7.39663 18.0208L5.98242 16.6066L14.589 8H7.00324V6H18.0032V17H16.0032V9.41421Z"
+                                            fill="white" /></svg>
+                                </span>
+                                <span data-btn-arrow class="btn-arrow">
+                                    <svg width="20" height="20" class="sm:w-6 sm:h-6" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.0032 9.41421L7.39663 18.0208L5.98242 16.6066L14.589 8H7.00324V6H18.0032V17H16.0032V9.41421Z"
+                                            fill="white" /></svg>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ==========================================================
+    Call to Action Section
+========================================================== -->
+    <section class="relative w-full bg-cover bg-center section-padding  z-20"
+        style="background-image: url('assets/images/cta-bg.png');">
+
+        <div class="max-w-183.75 mx-auto text-center flex flex-col items-center justify-center relative z-10">
+
+            <!-- Heading -->
+            <h2 class="text-white text-[32px] font-black leading-[120%] sm:text-[42px] lg:text-[54px]">
+                Ready to grow your store's organic revenue?
+            </h2>
+
+            <!-- Subtext -->
+            <p class="text-white text-sm sm:text-base md:text-lg lg:text-xl font-medium leading-[130%] mt-4">
+                Free 30-minute E-commerce SEO consultation. I'll review your site and show you the biggest
+                opportunities.
+            </p>
+
+            <!-- Bottom CTA Button -->
+            <div class="flex justify-center mt-6 md:mt-12">
+                <a href="#" data-btn
+                    class="btn bg-white py-1.5 sm:py-2 pl-5 sm:pl-8 pr-1.5 sm:pr-2 rounded-[12px] inline-flex items-center gap-4 sm:gap-6 shadow-[0_10px_30px_rgba(0,0,0,0.08)] shrink-0 group">
+                    <span data-btn-shine class="btn-shine"></span>
+                    <span
+                        class="relative text-[#180E4B] text-sm sm:text-lg lg:text-[22px] font-semibold leading-[124%] z-10">Hire
+                        me on
+                        Upwork</span>
+                    <span data-btn-icon
+                        class="bg-[#FFD342] rounded-[10px] sm:rounded-[12px] w-9 h-9 sm:w-14 sm:h-14 flex items-center justify-center relative z-10 transition-transform duration-300 group-hover:rotate-45">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="text-[#180E4B] w-4 h-4 sm:w-6 sm:h-6">
+                            <path
+                                d="M16.0032 9.41421L7.39663 18.0208L5.98242 16.6066L14.589 8H7.00324V6H18.0032V17H16.0032V9.41421Z"
+                                fill="currentColor" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+    Footer Section
+========================================================== -->
+    <footer class="relative bg-[#0E0636] text-white pt-16 sm:pt-20 z-20">
+
+        <!-- Main Content Container -->
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Column 1: Brand & Bio -->
+                <div class="footer-brand-col">
+                    <a href="#home" class="footer-logo-link">
+                        <img src="assets/images/footer-logo.png" class="img-fluid" alt="MD Asif">
+                    </a>
+                    <p class="footer-bio-text">
+                        E-commerce SEO & AI SEO Specialist · 140+ projects · 3,980+ hours · Top Rated on Upwork.
+                    </p>
+                </div>
+
+                <!-- Columns 2-4: Navigation Links Container -->
+                <div class="footer-nav-grid">
+
+                    <!-- Services Column -->
+                    <div class="footer-col services-col">
+                        <h4 class="footer-heading">Services</h4>
+                        <div class="services-subgrid">
+                            <!-- Left 4 Items -->
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">Shopify SEO</a></li>
+                                <li><a href="#" class="footer-link">WooCommerce SEO</a></li>
+                                <li><a href="#" class="footer-link">BigCommerce SEO</a></li>
+                                <li><a href="#" class="footer-link">Category SEO</a></li>
+                            </ul>
+                            <!-- Right 4 Items -->
+                            <ul class="footer-list">
+                                <li><a href="#" class="footer-link">Technical SEO</a></li>
+                                <li><a href="#" class="footer-link">Schema Markup</a></li>
+                                <li><a href="#" class="footer-link">Rich Snippets</a></li>
+                                <li><a href="#" class="footer-link">Sales Channel Dev</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Pages Column -->
+                    <div class="footer-col pages-col">
+                        <h4 class="footer-heading">Pages</h4>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Home</a></li>
+                            <li><a href="#" class="footer-link">Services</a></li>
+                            <li><a href="#" class="footer-link">My Works</a></li>
+                            <li><a href="#" class="footer-link">About Me</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Connect Column -->
+                    <div class="footer-col connect-col">
+                        <h4 class="footer-heading">Connect</h4>
+                        <ul class="footer-list">
+                            <li>
+                                <a href="#" class="footer-link connect-upwork">
+                                    <img src="assets/images/footer-upwork.svg" alt="upwork">
+                                    <span>★ Upwork profile</span>
+                                </a>
+                            </li>
+                            <li class="footer-text-muted">All inquiries via Upwork</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Wrapped in an Anchor Tag -->
+        <a href="#" id="ctaCursorArea"
+            class="relative block w-full bg-cover bg-center overflow-hidden text-center no-underline cursor-pointer">
+
+            <!-- Floating Custom Cursor Button (Your exact structure with fixed positioning & centering added) -->
+            <div id="customCursorBtn"
+                class="custom-cursor pointer-events-none fixed top-0 left-0 z-50 flex justify-center opacity-0 scale-0 -translate-x-1/2 -translate-y-1/2">
+                <div class="btn btn-primary shrink-0">
+                    <span class="relative z-10">View case study</span>
+
+                    <span class="btn-icon relative z-10">
+                        <span class="btn-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.0032 9.41421L7.39663 18.0208L5.98242 16.6066L14.589 8H7.00324V6H18.0032V17H16.0032V9.41421Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Big Footer Logo Image -->
+            <div class="flex justify-center pointer-events-none">
+                <img src="assets/images/Big-name-graphics.png" alt=""
+                    class="w-full max-w-6xl object-contain opacity-90 select-none pointer-events-none">
+            </div>
+        </a>
+
+        <!-- Bottom Copyright Bar -->
+        <div
+            class="w-full bg-white py-2 px-4 sm:px-6 lg:px-8 flex justify-center md:justify-end text-xs sm:text-sm md:text-base leading-[130%] text-[#180E4B] text-center">
+            <span>© 2026 Md Asif · E-commerce SEO & AI SEO Specialist</span>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/Flip.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/splide.min.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
